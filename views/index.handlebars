@@ -1,0 +1,26 @@
+<!--create template that handlebars can render into
+create a button to submit user input burger -->
+<h1>BURGERS!</h1>
+
+<h2>Available for ordering:</h2>
+<ul class="notEatenList">
+    {{#each burgers}} {{#unless devoured}}
+    <li class="notEaten">
+        {{id}}. {{burger_name}}
+        <button type="submit" data-id={{id}} class="devoured">Devoured</button>
+    </li>
+    {{/unless}} {{/each}}
+</ul>
+
+<h2>No longer available:</h2>
+<ul class="eatenList">
+    {{#each burgers}} {{#if devoured}}
+    <li class="eaten">{{id}}. {{burger_name}}</li>
+    {{/if}} {{/each}}
+</ul>
+
+<h2>Create a burger:</h2>
+<form class="add-burger">
+    <input type="text" id="newBurger" name="newBurger">
+    <button type="submit" id="submitBurger">Submit</button>
+</form>

@@ -1,0 +1,49 @@
+body{
+background-color: slategray;
+}
+
+.notEaten{
+    margin-left: 20vw;
+    margin-right: 30vw;
+    margin-top: 10px;
+    padding: 20px;
+    border: white solid;
+    font-size: 24px;
+    background-color: rosybrown;
+}
+
+.eaten{
+    margin-left: 20vw;
+    margin-right: 30vw;
+    margin-top: 10px;
+    padding: 20px;
+    border: white solid;
+    font-size: 24px;
+    background-color: #837c7c;
+}
+
+h1{
+    margin-left: 20vw;
+}
+
+h2{
+    margin-left: 20vw;
+}
+
+h3{
+    margin-left: 20vw;
+}
+
+form{
+    margin-left: 23vw;
+}
+
+ul{
+    list-style-type: none
+}
+
+input{
+    font-size: 18px;
+    width: 500px;
+    height: 50px;
+}
